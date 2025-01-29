@@ -3,11 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <title>Quiz</title>
+    <title>Quiz Settings</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
+   <div class="container">
+     <div class="quiz-container">
+        <h2>Customize Your Quiz</h2>
+        <form id="quizSettingsForm" action="test.html">
+            <div class="form-group">
+                <label for="numQuestions">Number of Questions</label>
+                <input type="number" id="numQuestions" name="numQuestions" min="1" max="50" value="10" required>
+            </div>
+
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category" name="category" required>
+                    <option value="">Loading Categories...</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="questionType">Question Type</label>
+                <select id="questionType" name="questionType" required>
+                    <option value="multiple">Multiple-Choice</option>
+                    <option value="boolean">True/False</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="difficulty">Difficulty Level</label>
+                <select id="difficulty" name="difficulty" required>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+
+            <button type="submit">Start Quiz</button>
+        </form>
+    </div>
+   </div>
+
     
 </body>
 </html>
