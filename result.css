@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #4a90e2, #9013fe); /* Gradient background */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bg1.jpg);
+background-size: cover;
+background-position: center;
+
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.result-card {
+  background-color: rgba(0, 0, 0, 0.4); 
+  border-radius: 1.5rem;
+  border: 1px solid #20777473;
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  padding: 3rem;
+  text-align: center;
+  width: 90%;
+  max-width: 40rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #d8e5e6;
+}
+
+.score {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.message {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.play-button {
+  background-color: #008080;  
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: #197c7ad2;
+  transform: translateY(-0.1rem);
+}

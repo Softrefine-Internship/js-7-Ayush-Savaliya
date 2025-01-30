@@ -5,10 +5,12 @@
 }
 html{
   font-size: 62.5%;
+  
 }
 body {
     font-family: 'Arial', sans-serif;
     color: #ccc; 
+    
 }
 
 .container{
@@ -21,6 +23,7 @@ body {
 }
 
 .quiz-container {
+    
     background-color: #2a2a2aa1; 
     border: 2px solid #4866eb1f;
     border-radius: 1.2rem;
@@ -96,13 +99,9 @@ input::placeholder {
     color: #999;
 }
 
-
-
 select::-webkit-scrollbar {
   display: none;
 }
 select option{
   background-color:#00091C;
 }
-
-

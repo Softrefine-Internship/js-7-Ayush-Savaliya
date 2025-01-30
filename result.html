@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="result-card">
+            <h1 class="title">Quiz Completed!</h1>
+            <p class="score">Your Score: <span id="scoreValue">0</span></p>
+            <p class="message">Well done! You've completed the quiz.</p>
+            <button class="play-button" onclick="playNewQuiz()">Play Again</button>
+        </div>
+    </div>
+
+    <script>
+       
+        function getScoreFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('score') || 0;
+        }
+
+        
+        function playNewQuiz() {
+            window.location.href = "index.html";
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const score = getScoreFromURL();
+            document.getElementById('scoreValue').textContent = score;
+        });
+    </script>
+</body>
+</html>
